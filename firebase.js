@@ -18,6 +18,7 @@ signUp.addEventListener("click", e => {
   var promise = auth.createUserWithEmailAndPassword(email, password);
   promise
   .catch(e => console.log(e.message));
+  e.preventDefault();
   alert(email);
 });
 logOut.addEventListener("click", e => {
