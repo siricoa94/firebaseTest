@@ -26,16 +26,29 @@
         <button type="submit" class="btn btn-primary" id="signUp">Sign Up Here</button>
         <button type="submit" class="btn btn-primary" id="logOut">Bye Bye!</button>
     </form>
-<!-- Insert these scripts at the bottom of the HTML, but before you use any Firebase services -->
-
 <!-- The core Firebase JS SDK is always required and must be listed first -->
 <script src="https://www.gstatic.com/firebasejs/7.2.2/firebase-app.js"></script>
-<!-- Add Firebase products that you want to use -->
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.2.2/firebase-analytics.js"></script>
 <script src="https://www.gstatic.com/firebasejs/7.2.1/firebase-auth.js"></script>
-
-<script src="https://www.gstatic.com/firebasejs/7.2.2/firebase-analytics.js"></script>   
-
-<script src="https://www.gstatic.com/firebasejs/7.2.1/firebase-firestore.js"></script>
+<script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+      apiKey: "AIzaSyBzypdC3VeT_pvzX7KAwbxIAA4S_oZ7DiY",
+      authDomain: "bank-of-andrew.firebaseapp.com",
+      databaseURL: "https://bank-of-andrew.firebaseio.com",
+      projectId: "bank-of-andrew",
+      storageBucket: "bank-of-andrew.appspot.com",
+      messagingSenderId: "546770562236",
+      appId: "1:546770562236:web:dd7848ed4c0e03dfa434b9",
+      measurementId: "G-XFSNBP5MJB"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+</script>
 <script src="firebase.js"></script>
 </body>
 </html>
